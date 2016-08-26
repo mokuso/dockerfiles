@@ -1,9 +1,9 @@
-FROM centos:latest
+FROM alpine:latest
 
 RUN \
- yum -y update && \
- yum -y install squid && \
- yum clean all
+ apk update && \
+ apk upgrade && \
+ apk add squid 
 
 #USER squid
 
