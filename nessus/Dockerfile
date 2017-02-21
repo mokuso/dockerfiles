@@ -2,7 +2,7 @@ FROM debian:jessie
 MAINTAINER Rich Walchuck <rich.walchuck@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV NESSUS_VERSION 6.8.1
+ENV NESSUS_VERSION 6.10.2
 
 RUN apt-get update && \
 apt-get install -y wget && \
